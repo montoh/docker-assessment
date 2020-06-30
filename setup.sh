@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "-----------------------"
-echo "Script us RUNNING... "
+echo "Script is RUNNING... "
 echo "-----------------------"
 
 # create the network
