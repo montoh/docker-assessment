@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion : "2010-09-09"
+Description : Create an Amazon EC2 instance running the Ubuntu AMI. The AMI is chosen based on the region in which the stack is run.
+
+Resources:
+  Ec2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-0ac80df6eff0e70b5 # Ubuntu AMI in N.Virgina
+      Tags:
+        - Key: Name
+          Value: My EC2 
+        - Key: Tool
+          Value: CloudFormation
+
+Outputs:
+  instanceID:
+    Description: EC2 Instance ID
+    Value: !Ref Ec2Instance
