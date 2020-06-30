@@ -22,7 +22,9 @@ This is a small project to acheive some task.
 * Install Boto3
 
 
-## Task 1
+### Task 1
+There are two different ways of getting the app up and running with Docker.
+
 Bash Script
 ```
 $ chmod +x setup.sh
@@ -36,7 +38,7 @@ Docker Compose
 $ docker-compose up -d
 ```
 
-## Task 2
+### Task 2
 Create EC2 Instance with CloudFormation
 ```
 $ aws cloudformation deploy --template-file ec2.yml --stack-name single-ec2
@@ -44,15 +46,15 @@ $ aws cloudformation deploy --template-file ec2.yml --stack-name single-ec2
 
 Enter your EC2 Instance ID in a file with the name *instance_id.txt* and save this file
 ```
-*instance_id.txt*
+instance_id.txt
 ```
 
-STOP EC2 Instance with Python Script
+*STOP* EC2 Instance with Python Script
 ```
 $ python3 start_stop_ec2.py -d
 ```
 
-START EC2 Instance with Python Script
+*START* EC2 Instance with Python Script
 ```
 $ python3 start_stop_ec2.py -u
 ```

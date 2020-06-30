@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "================"
-echo "Builing Image... "
-echo "================"
+echo "-----------------------"
+echo "Script us RUNNING... "
+echo "-----------------------"
 
 # create the network
 docker create network shared-network
