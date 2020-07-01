@@ -5,7 +5,7 @@ echo "Script is RUNNING... "
 echo "-----------------------"
 
 # create the network
-docker create network shared-network
+docker network create shared-network
 
 # start nginx container
 docker run -d --name nginx -p 8080:80 --net shared-network nginx
