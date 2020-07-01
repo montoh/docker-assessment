@@ -14,4 +14,4 @@ docker run -d --name nginx -p 8080:80 --net shared-network nginx
 docker run -d --name db --net shared-network mysql
 
 # start kibana container
-docker run -d --name nginx -p 5601:5601 --net shared-network kibana:6.4.2
+docker run -d --name kibana -p 5601:5601 --net shared-network kibana:6.4.2
